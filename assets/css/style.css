@@ -1,0 +1,538 @@
+/* ===================================
+RESET DEFAULT STYLE & GLOBAL SETUP
+====================================== */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: Arial, sans-serif;
+}
+
+body {
+ background-color: #f4f4f4;
+ color: #333;
+}
+
+/* ====================
+CONTAINER UTAMA
+======================= */
+/* Aturan .container ini akan ditimpa khusus untuk halaman utama di bagian bawah */
+.container {
+ width: 80%;
+ margin: 20px auto;
+ padding: 20px;
+ background: white;
+ border-radius: 10px;
+ box-shadow: 0 0 10px #dea193;
+}
+
+/* ==========================
+FORM LOGIN & REGISTER
+============================= */
+.auth-container {
+ width: 380px;
+ margin: 40px auto;
+ padding: 30px;
+ background: #f9f9f9;
+ border-radius: 10px;
+ box-shadow: 0 0 10px #dea193;
+ text-align: center;
+}
+
+.auth-container h2 {
+ margin-bottom: 20px;
+}
+
+.auth-container input {
+ width: 100%; 
+ padding: 10px;
+ margin: 5px 0;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+}
+
+.auth-container button {
+ width: 100%;
+ padding: 10px;
+ background: #007bff;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.auth-container button:hover {
+ background: #0056b3;
+}
+
+/* ====================
+NAVBAR (Menu Atas) UMUM
+======================= */
+/* Aturan .navbar ini akan ditimpa khusus untuk halaman utama di bagian bawah */
+.navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #333;
+ padding: 15px;
+}
+
+.navbar h1 {
+ color: white;
+}
+
+.navbar nav a {
+ color: white;
+ text-decoration: none;
+ padding: 10px 15px;
+}
+
+.navbar nav a:hover {
+ background: #555;
+ border-radius: 5px;
+}
+
+/* ====================
+HALAMAN PRODUK
+======================= */
+.product-container {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 20px;
+ border-radius: 8px;
+ margin-bottom: 20px;
+ padding: 20px;
+ text-align: center;
+ background-color: #ffffff;
+
+}
+
+.product {
+ background: white;
+ padding: 15px;
+ border: 1px solid #ddd;
+ text-align: center;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+ width: 100%;
+ height: auto;
+ border-radius: 10px;
+}
+
+.product h3 {
+ margin: 10px 0;
+}
+
+.product button {
+ padding: 10px;
+ background: #007bff;
+ color: white;
+ border: none;
+ cursor: pointer;
+ border-radius: 5px;
+}
+
+.product button:hover {
+ background: #0056b3;
+}
+
+/* Harga Produk */
+.price {
+ font-size: 18px;
+ font-weight: bold;
+ color: #d9534f;
+}
+
+/* Deskripsi Produk */
+.description {
+ font-size: 14px;
+ color: #555;
+ margin-top: 5px;
+}
+
+/* ==========================
+TABEL KERANJANG BELANJA
+============================= */
+.cart-table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 20px;
+}
+
+.cart-table th, .cart-table td {
+ padding: 12px;
+ border-bottom: 1px solid #ddd;
+ text-align: center;
+}
+
+.cart-table th {
+ background: #333;
+ color: white;
+}
+
+.cart-table td {
+ background: #fff;
+}
+
+.cart-img {
+ width: 80px;
+ border-radius: 5px;
+}
+
+/* Tombol Checkout */
+.checkout-btn {
+ display: block;
+ width: 100%;
+ padding: 10px;
+ margin-top: 20px;
+ background: #28a745;
+ color: white;
+ border: none;
+ font-size: 16px;
+ cursor: pointer;
+ border-radius: 5px;
+}
+
+.checkout-btn:hover {
+ background: #218838;
+}
+
+/* ========================
+FORM UMUM (Reusabel)
+=========================== */
+form {
+ display: flex;
+ flex-direction: column;
+}
+
+form label {
+ margin-top: 10px;
+ font-weight: bold;
+}
+
+form input {
+ padding: 10px;
+ margin-top: 5px;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+}
+
+form button {
+ margin-top: 15px;
+ padding: 10px;
+ background: #28a745;
+ color: white;
+ border: none;
+ cursor: pointer;
+ border-radius: 5px;
+}
+
+form button:hover {
+ background: #218838;
+}
+
+/* ====================
+LIST ITEM (UL, LI)
+======================= */
+ul {
+ list-style: none;
+ padding: 0;
+}
+
+ul li {
+ display: flex;
+ align-items: center;
+ background: #f9f9f9;
+ margin: 5px 0;
+ padding: 10px;
+ border-left: 5px solid #007bff;
+ border-radius: 5px;
+ font-size: 16px;
+ color: #333;
+}
+
+ul li a {
+ color: #007bff;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+ul li a:hover {
+ text-decoration: underline;
+}
+
+/* ====================
+KEUNGGULAN (ADVANTAGE)
+======================= */
+.advantages {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ background: #f8f9fa;
+ padding: 20px;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ margin-top: 20px;
+}
+
+.advantage-item {
+ flex: 1;
+ min-width: 250px;
+ margin: 10px;
+ padding: 15px;
+ background: white;
+ border-radius: 8px;
+ text-align: center;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ transition: transform 0.3s ease-in-out;
+}
+
+.advantage-item:hover {
+ transform: translateY(-5px);
+}
+
+.advantage-item h3 {
+ font-size: 18px;
+ color: #007bff;
+ margin-bottom: 8px;
+}
+
+.advantage-item p {
+ font-size: 14px;
+ color: #666;
+}
+
+/* ==================================================
+PERBAIKAN KHUSUS UNTUK HALAMAN UTAMA (HOME)
+===================================================== */
+
+body > .container {
+ max-width: 900px;
+ background: none;
+ box-shadow: none;
+ padding: 0;
+}
+
+/* Aturan yang sudah diperbaiki */
+.navbar,
+.produk-terbaru,
+.main-footer {
+    background-color: #ffffff;
+    border: 1px solid #EAD7D3;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px #DEA193; /* TAMBAHKAN BARIS INI */
+}
+
+.navbar {
+ display: block;
+}
+.navbar .logo {
+    width: 150px; 
+    margin-bottom: 10px;
+}
+.navbar h1 {
+ color: #C88A7D;
+ margin-bottom: 15px;
+}
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 25px;
+}
+.navbar nav a {
+ color: #C88A7D;
+ font-weight: bold;
+ background: none;
+}
+.navbar nav a:hover {
+ color: #DEA193;
+ background: #f0e9e8;
+}
+
+.produk-terbaru h2 {
+ color: #C88A7D;
+}
+.produk-grid {
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ flex-wrap: wrap;
+ margin-top: 20px;
+}
+.produk-item {
+ width: 200px;
+}
+.produk-item img {
+ width: 100%;
+ border-radius: 8px;
+ border: 1px solid black;;
+}
+.produk-item h3 {
+ color: #C88A7D;
+ margin: 10px 0 5px 0;
+ font-size: 1em;
+}
+.produk-item p {
+ font-weight: bold;
+}
+
+
+/* =================================
+CSS UNTUK INFO LOGIN DI NAVBAR
+================================= */
+.user-info {
+ margin-left: auto;
+ display: flex;
+ align-items: center;
+ gap: 15px;
+}
+
+.user-greeting {
+ font-weight: bold;
+ color: #555;
+}
+
+.logout-button, .login-button {
+ text-decoration: none;
+ font-weight: bold;
+ color: #DEA193;
+ border: 2px solid #DEA193;
+ padding: 5px 12px;
+ border-radius: 20px;
+ transition: all 0.3s;
+}
+
+.logout-button:hover, .login-button:hover {
+ background-color: #DEA193;
+ color: white;
+}
+
+
+/* =================================
+   CSS UNTUK BANNER CAROUSEL - FINAL
+   ================================= */
+
+.hero-carousel {
+    position: relative;
+    height: 300px; /* TINGGI BANNER DIUBAH DI SINI - bisa Anda sesuaikan lagi */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden; /* Penting agar gambar tidak keluar dari container */
+    border: 1px solid #EAD7D3; /* Menyamakan dengan style kotak lain */
+}
+
+/* Atur semua slide agar menumpuk di posisi yang sama dan transparan */
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Awalnya semua transparan (tidak terlihat) */
+    transition: opacity 0.8s ease-in-out; /* Animasi fade selama 0.8 detik */
+}
+
+/* Aturan untuk slide yang sedang aktif (terlihat) */
+.carousel-slide.active {
+    opacity: 1; /* Slide aktif dibuat tidak transparan (terlihat) */
+}
+
+/* Atur agar gambar di dalam slide mengisi seluruh area carousel */
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ini kunci agar gambar pas tanpa distorsi */
+}
+
+/* Aturan untuk tombol panah navigasi */
+.hero-carousel .prev, 
+.hero-carousel .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-carousel .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.hero-carousel .prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.hero-carousel .prev:hover, 
+.hero-carousel .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ==========================
+MEDIA QUERIES (RESPONSIVE)
+============================= */
+@media screen and (max-width: 768px) {
+ .container, body > .container {
+  width: 95%;
+ }
+ .product-container {
+  grid-template-columns: repeat(2, 1fr);
+ }
+ .navbar {
+  flex-direction: column;
+  align-items: center;
+ }
+    .navbar nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .user-info {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+ ul li {
+  font-size: 14px;
+ }
+ .advantages {
+  flex-direction: column;
+  align-items: center;
+ }
+ .advantage-item {
+  width: 90%;
+ }
+ .auth-container {
+  width: 70%;
+ }
+}
+
+@media screen and (max-width: 480px) {
+ .product-container {
+  grid-template-columns: repeat(1, 1fr);
+ }
+ .navbar nav {
+  text-align: center;
+ }
+ .navbar nav a {
+  display: block;
+  margin: 5px 0;
+ }
+ .auth-container {
+  width: 90%;
+ }
+}
